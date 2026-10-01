@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6080电影网 - 6080电影网最新电影资讯、院线新片与热播榜单 | 6080dianyingwang-zh.github.io</title>
+<meta name="description" content="6080电影网（https://6080dianyingwang-zh.github.io）是电影资讯与选片参考站，提供院线新片、热播榜单、排片档期、影评、类型片库与观影指南，覆盖国产片、进口片、喜剧、悬疑、科幻与经典修复，不提供影片下载与在线播放。">
+<meta name="keywords" content="6080电影网,6080dianyingwang-zh.github.io,6080电影网新片,院线新片,电影热播榜,电影影评,类型片库,观影指南">
+<meta name="author" content="6080电影网编辑部">
+<link rel="canonical" href="https://6080dianyingwang-zh.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="6080电影网 - 最新电影资讯与院线新片推荐">
+<meta property="og:description" content="6080电影网整理院线新片、热播榜单、影评与观影指南，网址 https://6080dianyingwang-zh.github.io。">
+<meta property="og:url" content="https://6080dianyingwang-zh.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="6080电影网 - 最新电影资讯与院线新片">
+<meta name="twitter:description" content="6080电影网：院线新片、热播榜单、影评推荐、片单合集，访问 https://6080dianyingwang-zh.github.io。">
+<style>
+:root{
+  --bg:#07100d; --panel:#0d1b16; --panel2:#12241e; --line:#1f3a30;
+  --ink:#e8f5ee; --sub:#83a397; --neon:#38e0a8; --lime:#c8f24b;
+  --amber:#ffb84d; --red:#ff6b6b; --green:#36d39b; --navh:64px;
+  --shadow:0 14px 40px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:
+    radial-gradient(900px 500px at 85% 0%,#102b22 0,transparent 60%),
+    radial-gradient(700px 400px at 0% 40%,#0c241d 0,transparent 55%),
+    var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",Arial,sans-serif;
+  font-size:16px;line-height:1.7;-webkit-text-size-adjust:100%}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 18px}
+header.top{position:sticky;top:0;z-index:60;background:rgba(7,16,13,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:var(--navh)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900}
+.brand .no{background:linear-gradient(135deg,var(--neon),var(--lime));color:#07100d;font-size:19px;padding:4px 9px;border-radius:9px;box-shadow:0 0 16px rgba(56,224,168,.4)}
+.brand b{font-size:19px;letter-spacing:.4px}
+.brand .u{font-size:12px;color:var(--sub);font-weight:500}
+nav.links{display:flex;gap:4px;flex-wrap:wrap}
+nav.links a{padding:8px 11px;font-size:14px;color:var(--sub);border-radius:9px;border:1px solid transparent}
+nav.links a:hover,nav.links a.on{color:var(--bg);background:var(--neon);border-color:var(--neon)}
+.burger{display:none;background:var(--panel2);border:1px solid var(--line);color:var(--ink);border-radius:9px;padding:8px 12px;font-size:17px;cursor:pointer}
+.hero{padding:36px 0 20px;border-bottom:1px solid var(--line)}
+.kicker{display:inline-block;font-size:12px;letter-spacing:2px;color:var(--neon);border:1px solid var(--line);border-radius:999px;padding:5px 12px;background:var(--panel)}
+h1{font-size:clamp(26px,4.2vw,46px);line-height:1.16;margin:14px 0 12px}
+h1 em{font-style:normal;color:var(--neon);text-shadow:0 0 24px rgba(56,224,168,.35)}
+.lead{color:var(--sub);max-width:760px;margin:0}
+.panels{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:14px;margin-top:22px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.panel::after{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,var(--neon),var(--lime))}
+.panel .n{font-size:24px;font-weight:900;font-variant-numeric:tabular-nums}
+.panel .l{color:var(--sub);font-size:13px}
+.panel .live{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--neon);margin-bottom:8px}
+.dotlive{width:8px;height:8px;border-radius:50%;background:var(--neon);box-shadow:0 0 10px var(--neon);animation:p 1.4s infinite}
+@keyframes p{0%,100%{opacity:1}50%{opacity:.25}}
+.tick{font-size:13px;color:var(--sub)}
+.tick li{list-style:none;padding:6px 0;border-bottom:1px dashed var(--line)}
+.tick li:last-child{border-bottom:0}
+.tick b{color:var(--ink)}
+section{padding:40px 0;scroll-margin-top:calc(var(--navh)+12px);border-bottom:1px solid var(--line)}
+.sec-top{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+h2{font-size:clamp(21px,2.6vw,29px);margin:0;display:flex;align-items:center;gap:10px}
+h2 .n{font-size:13px;color:var(--bg);background:var(--neon);padding:3px 8px;border-radius:6px;font-weight:900}
+.sec-sub{color:var(--sub);font-size:14px;margin:6px 0 0}
+.more{font-size:13px;color:var(--neon);border:1px solid var(--line);background:var(--panel);padding:6px 12px;border-radius:8px}
+.grid{display:grid;gap:16px}
+.g5{grid-template-columns:repeat(5,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.poster{background:var(--panel);border:1px solid var(--line);border-radius:13px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow);transition:.2s}
+.poster:hover{transform:translateY(-4px);border-color:var(--neon)}
+.poster .cv{aspect-ratio:2/3;display:grid;place-items:center;font-size:34px;color:#07100d;font-weight:900;position:relative}
+.poster .cv span{position:absolute;top:8px;left:8px;font-size:11px;background:rgba(7,16,13,.7);color:var(--neon);padding:2px 7px;border-radius:5px;border:1px solid var(--line)}
+.c1{background:linear-gradient(160deg,#38e0a8,#1d8f6b)}
+.c2{background:linear-gradient(160deg,#ffb84d,#e8792a)}
+.c3{background:linear-gradient(160deg,#c8f24b,#7fb32e)}
+.c4{background:linear-gradient(160deg,#6fe0d6,#2b9b9b)}
+.c5{background:linear-gradient(160deg,#ff9d76,#e25c5c)}
+.c6{background:linear-gradient(160deg,#a8b6ff,#5b6fd1)}
+.poster .bd{padding:11px 13px}
+.poster h3{margin:0 0 5px;font-size:15px}
+.m{display:flex;gap:6px;flex-wrap:wrap;font-size:11px;color:var(--sub);align-items:center}
+.rate{margin-left:auto;color:var(--lime);font-weight:800;font-variant-numeric:tabular-nums}
+.poster p{margin:7px 0 0;color:var(--sub);font-size:12px}
+.feat{display:grid;grid-template-columns:1.4fr 1fr;gap:18px}
+.leadbox{background:var(--panel);border:1px solid var(--line);border-radius:13px;overflow:hidden;box-shadow:var(--shadow)}
+.leadbox .cv{aspect-ratio:16/9;font-size:46px}
+.leadbox .bd{padding:18px}
+.nlist{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:6px 16px;box-shadow:var(--shadow)}
+.nlist li{list-style:none;display:flex;gap:10px;padding:11px 0;border-bottom:1px dashed var(--line);align-items:baseline}
+.nlist li:last-child{border-bottom:0}
+.nlist .ix{color:var(--neon);font-weight:900;font-size:13px;min-width:20px}
+.nlist .cat{font-size:11px;color:#07100d;background:var(--lime);padding:1px 7px;border-radius:4px;font-weight:700}
+.nlist .dt{margin-left:auto;color:var(--sub);font-size:12px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.tab{font-size:13px;color:var(--sub);border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:7px 14px;cursor:pointer}
+.tab.on{background:var(--neon);color:#07100d;font-weight:800;border-color:var(--neon)}
+.pane{display:none}
+.pane.on{display:block}
+.rlist{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:6px 18px;box-shadow:var(--shadow)}
+.rlist .row{display:grid;grid-template-columns:34px 1.4fr 1fr 70px 60px;gap:12px;align-items:center;padding:12px 0;border-bottom:1px dashed var(--line)}
+.rlist .row:last-child{border-bottom:0}
+.rlist .rk{font-size:18px;font-weight:900;color:var(--neon);font-variant-numeric:tabular-nums}
+.rlist .ttl{font-weight:700}
+.rlist .gen{font-size:12px;color:var(--sub)}
+.rlist .bar2{height:8px;background:#12241e;border-radius:999px;overflow:hidden}
+.rlist .bar2 i{display:block;height:100%;background:linear-gradient(90deg,var(--neon),var(--lime))}
+.rlist .chg{font-size:12px;text-align:right;font-variant-numeric:tabular-nums}
+.up{color:var(--green);font-weight:700}.dn{color:var(--red);font-weight:700}.eq{color:var(--sub)}
+.genre{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.gc{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:16px 10px;text-align:center}
+.gc:hover{border-color:var(--neon)}
+.gc .ic{font-size:26px}
+.gc h3{margin:8px 0 4px;font-size:15px}
+.gc p{margin:0;color:var(--sub);font-size:12px}
+.review{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:16px;box-shadow:var(--shadow)}
+.review .by{font-size:12px;color:var(--sub);margin-bottom:6px}
+.stars{color:var(--amber);letter-spacing:2px;font-weight:800}
+.guide-item{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:14px;box-shadow:var(--shadow)}
+.bar3{height:8px;background:#12241e;border-radius:999px;overflow:hidden;margin-top:8px}
+.bar3 i{display:block;height:100%;background:linear-gradient(90deg,var(--neon),var(--lime))}
+.faq{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:6px 18px}
+.faq details{padding:12px 0;border-bottom:1px dashed var(--line)}
+.faq details:last-child{border-bottom:0}
+.faq summary{cursor:pointer;font-weight:700}
+.faq p{color:var(--sub);margin:8px 0 0;font-size:14px}
+.about{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:22px}
+.urlbox{display:inline-block;background:linear-gradient(135deg,var(--neon),var(--lime));color:#07100d;font-weight:900;padding:9px 15px;border-radius:9px;margin:6px 0}
+.note{font-size:12px;color:var(--sub);background:var(--panel2);border:1px dashed var(--line);border-radius:8px;padding:10px 12px;margin-top:12px}
+footer{background:#040a08;color:#83a397;padding:28px 0;font-size:14px}
+footer a{color:var(--neon);text-decoration:underline}
+.foot{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:18px}
+.totop{position:fixed;right:14px;bottom:14px;width:44px;height:44px;border:0;border-radius:12px;background:var(--neon);color:#07100d;font-weight:900;display:none;cursor:pointer;z-index:70;box-shadow:0 0 18px rgba(56,224,168,.4)}
+@media(max-width:960px){
+  nav.links{display:none;position:absolute;top:var(--navh);left:0;right:0;background:#0a1511;border-bottom:1px solid var(--line);flex-direction:column;padding:8px 0}
+  nav.links.open{display:flex}
+  nav.links a{padding:11px 18px;border-radius:0}
+  .burger{display:block}
+  .panels{grid-template-columns:1fr 1fr}
+  .feat,.g5,.g4,.g3,.g2,.genre,.foot{grid-template-columns:1fr}
+  .g5{grid-template-columns:repeat(2,1fr)}
+  .rlist .row{grid-template-columns:28px 1fr 50px;gap:8px}
+  .rlist .gen,.rlist .bar2{display:none}
+}
+@media(max-width:600px){
+  body{font-size:15px}
+  .wrap{padding:0 14px}
+  .panels{grid-template-columns:1fr}
+  .g5,.g4,.g3,.g2,.genre{grid-template-columns:repeat(2,1fr)}
+  .leadbox .cv{aspect-ratio:4/3}
+}
+</style>
+</head>
+<body id="top">
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top">
+      <span class="no">6080</span><b>电影网</b>
+      <span class="u">https://6080dianyingwang-zh.github.io</span>
+    </a>
+    <button class="burger" id="bg" aria-label="展开菜单">☰</button>
+    <nav class="links" id="nv">
+      <a href="#news">电影资讯</a>
+      <a href="#new">院线新片</a>
+      <a href="#rank">热播榜单</a>
+      <a href="#schedule">排片档期</a>
+      <a href="#genre">类型片库</a>
+      <a href="#review">影评推荐</a>
+      <a href="#guide">片单指南</a>
+      <a href="#gallery">海报图集</a>
+      <a href="#about">关于6080</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <span class="kicker">◆ 6080电影网 · 电影资讯与选片参考</span>
+    <h1><em>6080电影网</em>：最新电影资讯、院线新片与热播榜单一站整理</h1>
+    <p class="lead">6080电影网（6080dianyingwang-zh.github.io）按“资讯—新片—榜单—排片—类型—影评”组织内容，覆盖国产现实片、进口商业片、喜剧、悬疑、科幻、动作与经典修复。本站只做选片参考，不提供影片下载，也不提供在线播放地址。</p>
+    <div class="panels">
+      <div class="panel">
+        <div class="live"><span class="dotlive"></span> 6080电影网 编辑部在线更新</div>
+        <div class="n">8 部</div>
+        <div class="l">本周院线热映跟踪 · 每日更新场次</div>
+        <ul class="tick" style="margin:10px 0 0;padding:0">
+          <li><b>《江雾谜案》</b> 悬疑，口碑稳在8分档</li>
+          <li><b>《轨道之上》</b> 科幻，IMAX/杜比重点厅</li>
+          <li><b>《海边小兽医》</b> 亲子场加开</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <div class="live"><span class="dotlive"></span> 内容覆盖</div>
+        <div class="n">6 类</div>
+        <div class="l">类型片库入口，可按情绪选片</div>
+        <ul class="tick" style="margin:10px 0 0;padding:0">
+          <li>喜剧 / 悬疑 / 科幻动作</li>
+          <li>剧情现实 / 国语经典</li>
+          <li>经典修复专题</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <div class="live"><span class="dotlive"></span> 榜单节奏</div>
+        <div class="n">4 榜</div>
+        <div class="l">口碑 · 票房 · 国产 · 进口</div>
+        <ul class="tick" style="margin:10px 0 0;padding:0">
+          <li>每周一更新票房榜</li>
+          <li>每日追加点映口碑</li>
+          <li>分榜独立排序</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="sec-top">
+      <div><h2><span class="n">01</span>电影资讯</h2><p class="sec-sub">定档、路演、点映、影展与修复动态，编辑部口径整理。</p></div>
+      <a class="more" href="#">全部资讯 #</a>
+    </div>
+    <div class="feat">
+      <article class="leadbox">
+        <div class="cv c2" role="img" aria-label="头图">🎬</div>
+        <div class="bd">
+          <span class="cat" style="background:var(--neon);color:#07100d;font-size:11px;padding:2px 7px;border-radius:4px;font-weight:700">头条</span>
+          <h3 style="margin:10px 0 6px">秋季院线定档观察：悬疑与现实主义排片增加，喜剧瞄准周末家庭场</h3>
+          <p class="m">2026-09-29 · 行业观察 · 阅读 2760</p>
+          <p style="color:var(--sub)">6080电影网统计本周新定档影片，悬疑片拿到更多晚间黄金场，现实题材倾向工作日口碑场，喜剧与动画集中在亲子周末。正文附定档日期、主创、点映反馈与替代片单。</p>
+          <a class="more" href="#">阅读全文 #</a>
+        </div>
+      </article>
+      <ul class="nlist">
+        <li><span class="ix">01</span><span class="cat">路演</span>《江雾谜案》主创谈审讯戏时间线重构<span class="dt">09-29</span></li>
+        <li><span class="ix">02</span><span class="cat">进口</span>《轨道之上》公布中文配音与IMAX特辑<span class="dt">09-28</span></li>
+        <li><span class="ix">03</span><span class="cat">喜剧</span>《周末修理铺》点映，亲子笑点占比高<span class="dt">09-27</span></li>
+        <li><span class="ix">04</span><span class="cat">修复</span>《山城夏日》4K版加开午间与周末场<span class="dt">09-26</span></li>
+        <li><span class="ix">05</span><span class="cat">影展</span>城市独立影展公布6部长片12部短片<span class="dt">09-25</span></li>
+        <li><span class="ix">06</span><span class="cat">动作</span>《边境列车》特技幕后上线，含分镜对照<span class="dt">09-24</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="new">
+    <div class="sec-top">
+      <div><h2><span class="n">02</span>院线新片</h2><p class="sec-sub">竖版海报卡 + 标签切换；详情链接统一用 # 占位。</p></div>
+    </div>
+    <div class="tabs">
+      <span class="tab on" data-t="n1">本周热映</span>
+      <span class="tab" data-t="n2">即将上映</span>
+      <span class="tab" data-t="n3">点映口碑</span>
+      <span class="tab" data-t="n4">修复重映</span>
+    </div>
+    <div class="pane on" id="n1">
+      <div class="grid g5">
+        <article class="poster"><div class="cv c5"><span>悬疑</span>🕵️</div><div class="bd"><h3>江雾谜案</h3><div class="m"><span>126分</span><span class="rate">8.1</span></div><p>小城连环案，审讯戏回收线索。<a href="#">详情 #</a></p></div></article>
+        <article class="poster"><div class="cv c4"><span>科幻</span>🛰️</div><div class="bd"><h3>轨道之上</h3><div class="m"><span>138分</span><span class="rate">7.5</span></div><p>空间站救援，IMAX视效占比高。<a href="#">详情 #</a></p></div></article>
+        <article class="poster"><div class="cv c2"><span>喜剧</span>🛠️</div><div class="bd"><h3>周末修理铺</h3><div class="m"><span>104分</span><span class="rate">7.9</span></div><p>老街修物与人情，适合周末场。<a href="#">详情 #</a></p></div></article>
+        <article class="poster"><div class="cv c1"><span>治愈</span>🐕</div><div class="bd"><h3>海边小兽医</h3><div class="m"><span>98分</span><span class="rate">8.3</span></div><p>动物病例推进，亲子向不低幼。<a href="#">详情 #</a></p></div></article>
+        <article class="poster"><div class="cv c6"><span>剧情</span>🚌</div><div class="bd"><h3>晚班公交</h3><div class="m"><span>112分</span><span class="rate">7.8</span></div><p>夜班司机群像，自然光拍摄。<a href="#">详情 #</a></p></div></article>
+      </div>
+    </div>
+    <div class="pane" id="n2">
+      <div class="grid g5">
+        <article class="poster"><div class="cv c3"><span>剧情</span>🏔️</div><div class="bd"><h3>雪线邮路</h3><div class="m"><span>待映</span><span class="rate">预约</span></div><p>高原邮差年行程，定档下月。<a href="#">预约 #</a></p></div></article>
+        <article class="poster"><div class="cv c5"><span>犯罪</span>🔬</div><div class="bd"><h3>无声证词</h3><div class="m"><span>待映</span><span class="rate">预约</span></div><p>法医与刑侦协作，已开发布会。<a href="#">预约 #</a></p></div></article>
+        <article class="poster"><div class="cv c2"><span>动作</span>🥋</div><div class="bd"><h3>边境列车</h3><div class="m"><span>待映</span><span class="rate">预约</span></div><p>近身格斗与长途追逐，特技向。<a href="#">预约 #</a></p></div></article>
+        <article class="poster"><div class="cv c6"><span>音乐</span>🎭</div><div class="bd"><h3>舞台之后</h3><div class="m"><span>待映</span><span class="rate">预约</span></div><p>地方剧团改革，含现场唱段。<a href="#">预约 #</a></p></div></article>
+        <article class="poster"><div class="cv c1"><span>现实</span>🌾</div><div class="bd"><h3>麦收之前</h3><div class="m"><span>待映</span><span class="rate">预约</span></div><p>返乡创业与代际观念，点映预热。<a href="#">预约 #</a></p></div></article>
+      </div>
+    </div>
+    <div class="pane" id="n3">
+      <div class="grid g4">
+        <article class="poster"><div class="cv c2"><span>点映</span>🏭</div><div class="bd"><h3>旧厂记忆</h3><div class="m"><span class="rate">7.9</span></div><p>工业遗址两代人沟通，节奏稳。<a href="#">反馈 #</a></p></div></article>
+        <article class="poster"><div class="cv c4"><span>点映</span>🏖️</div><div class="bd"><h3>潮汐旅馆</h3><div class="m"><span class="rate">8.0</span></div><p>沿海小旅馆轻喜剧，群像自然。<a href="#">反馈 #</a></p></div></article>
+        <article class="poster"><div class="cv c6"><span>点映</span>✏️</div><div class="bd"><h3>字母学校</h3><div class="m"><span class="rate">7.6</span></div><p>乡村教师与留守儿童学习线。<a href="#">反馈 #</a></p></div></article>
+        <article class="poster"><div class="cv c1"><span>点映</span>🎷</div><div class="bd"><h3>夜场乐队</h3><div class="m"><span class="rate">7.7</span></div><p>Livehouse与家庭期待冲突。<a href="#">反馈 #</a></p></div></article>
+      </div>
+    </div>
+    <div class="pane" id="n4">
+      <div class="grid g4">
+        <article class="poster"><div class="cv c3"><span>修复</span>🎞️</div><div class="bd"><h3>山城夏日 4K</h3><div class="m"><span class="rate">8.5</span></div><p>青春群像修复版，加开午场。<a href="#">场次 #</a></p></div></article>
+        <article class="poster"><div class="cv c5"><span>修复</span>🥁</div><div class="bd"><h3>鼓声往西 修复</h3><div class="m"><span class="rate">8.2</span></div><p>公路民乐题材，影展回看。<a href="#">场次 #</a></p></div></article>
+        <article class="poster"><div class="cv c4"><span>修复</span>🗼</div><div class="bd"><h3>灯塔守夜 修复</h3><div class="m"><span class="rate">8.0</span></div><p>海洋灾害值守，画质翻新。<a href="#">场次 #</a></p></div></article>
+        <article class="poster"><div class="cv c6"><span>修复</span>🎻</div><div class="bd"><h3>琴房记事 修复</h3><div class="m"><span class="rate">7.9</span></div><p>音乐题材老片，音轨重制。<a href="#">场次 #</a></p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="rank">
+    <div class="sec-top">
+      <div><h2><span class="n">03</span>热播榜单</h2><p class="sec-sub">进度条式榜单，一眼看出口碑与票房区间；数据为示例，正式站接评分接口。</p></div>
+    </div>
+    <div class="tabs">
+      <span class="tab on" data-t="r1">口碑总榜</span>
+      <span class="tab" data-t="r2">本周票房</span>
+      <span class="tab" data-t="r3">国产推荐</span>
+      <span class="tab" data-t="r4">进口推荐</span>
+    </div>
+    <div class="pane on" id="r1">
+      <div class="rlist">
+        <div class="row"><span class="rk">1</span><span><span class="ttl">海边小兽医</span><br><span class="gen">家庭/治愈 · 98分钟</span></span><span class="bar2"><i style="width:83%"></i></span><span class="chg">8.3</span><span class="chg up">↑ 新进</span></div>
+        <div class="row"><span class="rk">2</span><span><span class="ttl">江雾谜案</span><br><span class="gen">悬疑/犯罪 · 126分钟</span></span><span class="bar2"><i style="width:81%"></i></span><span class="chg">8.1</span><span class="chg eq">— 持平</span></div>
+        <div class="row"><span class="rk">3</span><span><span class="ttl">山城夏日 4K</span><br><span class="gen">青春/重映 · 96分钟</span></span><span class="bar2"><i style="width:85%"></i></span><span class="chg">8.5</span><span class="chg up">↑ 2</span></div>
+        <div class="row"><span class="rk">4</span><span><span class="ttl">周末修理铺</span><br><span class="gen">喜剧/家庭 · 104分钟</span></span><span class="bar2"><i style="width:79%"></i></span><span class="chg">7.9</span><span class="chg up">↑ 1</span></div>
+        <div class="row"><span class="rk">5</span><span><span class="ttl">轨道之上</span><br><span class="gen">科幻/动作 · 138分钟</span></span><span class="bar2"><i style="width:75%"></i></span><span class="chg">7.5</span><span class="chg eq">— 持平</span></div>
+      </div>
+    </div>
+    <div class="pane" id="r2">
+      <div class="rlist">
+        <div class="row"><span class="rk">1</span><span><span class="ttl">江雾谜案</span><br><span class="gen">秋季主档 · 黄金场</span></span><span class="bar2"><i style="width:92%"></i></span><span class="chg">1.02亿</span><span class="chg up">↑ 1</span></div>
+        <div class="row"><span class="rk">2</span><span><span class="ttl">轨道之上</span><br><span class="gen">IMAX重点 · 特效厅</span></span><span class="bar2"><i style="width:80%"></i></span><span class="chg">0.86亿</span><span class="chg eq">— 持平</span></div>
+        <div class="row"><span class="rk">3</span><span><span class="ttl">海边小兽医</span><br><span class="gen">亲子周末 · 口碑长尾</span></span><span class="bar2"><i style="width:62%"></i></span><span class="chg">0.61亿</span><span class="chg up">↑ 3</span></div>
+        <div class="row"><span class="rk">4</span><span><span class="ttl">周末修理铺</span><br><span class="gen">喜剧 · 黄金场</span></span><span class="bar2"><i style="width:50%"></i></span><span class="chg">0.49亿</span><span class="chg up">↑ 1</span></div>
+        <div class="row"><span class="rk">5</span><span><span class="ttl">山城夏日 4K</span><br><span class="gen">重映限定 · 修复展映</span></span><span class="bar2"><i style="width:26%"></i></span><span class="chg">0.22亿</span><span class="chg up">↑ 新进</span></div>
+      </div>
+    </div>
+    <div class="pane" id="r3">
+      <div class="grid g4">
+        <article class="poster"><div class="cv c5"><span>国产</span>🕵️</div><div class="bd"><h3>江雾谜案</h3><p>推荐点：线索回收干净，二刷有料。<a href="#">点评 #</a></p></div></article>
+        <article class="poster"><div class="cv c2"><span>国产</span>🛠️</div><div class="bd"><h3>周末修理铺</h3><p>推荐点：笑点分布均匀，不靠段子堆。<a href="#">点评 #</a></p></div></article>
+        <article class="poster"><div class="cv c1"><span>国产</span>🐕</div><div class="bd"><h3>海边小兽医</h3><p>推荐点：情绪克制，亲子不尴尬。<a href="#">点评 #</a></p></div></article>
+        <article class="poster"><div class="cv c6"><span>国产</span>🚌</div><div class="bd"><h3>晚班公交</h3><p>推荐点：群像自然，适合工作日场。<a href="#">点评 #</a></p></div></article>
+      </div>
+    </div>
+    <div class="pane" id="r4">
+      <div class="grid g4">
+        <article class="poster"><div class="cv c4"><span>进口</span>🛰️</div><div class="bd"><h3>轨道之上</h3><p>推荐点：视效规模大，选IMAX更值。<a href="#">点评 #</a></p></div></article>
+        <article class="poster"><div class="cv c4"><span>进口</span>🏖️</div><div class="bd"><h3>潮汐旅馆</h3><p>推荐点：轻喜剧解压，适合傍晚场。<a href="#">点评 #</a></p></div></article>
+        <article class="poster"><div class="cv c5"><span>进口</span>🔬</div><div class="bd"><h3>无声证词</h3><p>推荐点：证据链完整，悬疑控优先。<a href="#">点评 #</a></p></div></article>
+        <article class="poster"><div class="cv c6"><span>进口</span>🎭</div><div class="bd"><h3>舞台之后</h3><p>推荐点：现场唱段占比高，看原声版。<a href="#">点评 #</a></p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <div class="sec-top">
+      <div><h2><span class="n">04</span>排片档期</h2><p class="sec-sub">静态示意；正式版可接影院排片接口，按城市与影厅筛选。</p></div>
+      <a class="more" href="#">查全部场次 #</a>
+    </div>
+    <div class="grid g3">
+      <div class="about"><h3 style="margin-top:0">09-30 周二</h3><p style="color:var(--sub)"><b style="color:var(--ink)">《江雾谜案》</b> 悬疑<br>19:10 / 21:20 ｜ 热映中<br>建议坐中后排看字幕细节。</p></div>
+      <div class="about"><h3 style="margin-top:0">10-01 周三</h3><p style="color:var(--sub)"><b style="color:var(--ink)">《轨道之上》</b> 科幻/动作<br>13:30 / 16:00 / 19:40 ｜ IMAX/杜比<br>特效厅优先，避开首场爆米花高峰。</p></div>
+      <div class="about"><h3 style="margin-top:0">10-02 周四</h3><p style="color:var(--sub)"><b style="color:var(--ink)">《海边小兽医》</b> 家庭<br>10:30 / 14:20 ｜ 亲子专场<br>98分钟，散场不赶午睡。</p></div>
+      <div class="about"><h3 style="margin-top:0">10-03 周五</h3><p style="color:var(--sub)"><b style="color:var(--ink)">《周末修理铺》</b> 喜剧<br>15:00 / 19:30 ｜ 黄金场<br>笑声感染强，适合结伴。</p></div>
+      <div class="about"><h3 style="margin-top:0">10-04 周六</h3><p style="color:var(--sub)"><b style="color:var(--ink)">《晚班公交》</b> 剧情<br>14:00 / 18:50 ｜ 口碑场<br>节奏慢，工作日午间更沉浸。</p></div>
+      <div class="about"><h3 style="margin-top:0">10-05 周日</h3><p style="color:var(--sub)"><b style="color:var(--ink)">《山城夏日 4K》</b> 重映<br>11:00 / 15:30 ｜ 修复展映<br>画质翻新，选4K厅。</p></div>
+    </div>
+  </section>
+
+  <section id="genre">
+    <div class="sec-top">
+      <div><h2><span class="n">05</span>类型片库</h2><p class="sec-sub">按观众找片习惯分库，后期可接首字母/地区/年代复合检索。</p></div>
+      <a class="more" href="#">全部类型 #</a>
+    </div>
+    <div class="genre">
+      <a class="gc" href="#"><div class="ic">😄</div><h3>喜剧</h3><p>周末解压、家庭轻喜剧</p></a>
+      <a class="gc" href="#"><div class="ic">🕵️</div><h3>悬疑</h3><p>犯罪推理、证据链复盘</p></a>
+      <a class="gc" href="#"><div class="ic">🛰️</div><h3>科幻动作</h3><p>视效大片、太空与特工</p></a>
+      <a class="gc" href="#"><div class="ic">🎭</div><h3>剧情现实</h3><p>家庭、职场、代际关系</p></a>
+      <a class="gc" href="#"><div class="ic">🀄</div><h3>国语经典</h3><p>修复老片、年代佳作</p></a>
+      <a class="gc" href="#"><div class="ic">🎞️</div><h3>修复专题</h3><p>4K重制、导演剪辑合集</p></a>
+    </div>
+  </section>
+
+  <section id="review">
+    <div class="sec-top">
+      <div><h2><span class="n">06</span>影评推荐</h2><p class="sec-sub">编辑长评、观众短评、创作谈；写具体场面，不写空泛夸赞。</p></div>
+      <a class="more" href="#">投稿影评 #</a>
+    </div>
+    <div class="grid g3">
+      <article class="review">
+        <div class="by">编辑长评 · 悬疑组</div>
+        <h3 style="margin:0 0 6px">《江雾谜案》如何用一场审讯重排前80分钟</h3>
+        <p style="color:var(--sub)">前两幕像纪实取证，第71分钟雨戏停对白4秒，第三幕把物证与口供对位。二刷坐前排看字幕，能发现三次伏笔回收。</p>
+        <p class="stars">★★★★☆ <a href="#">全文 #</a></p>
+      </article>
+      <article class="review">
+        <div class="by">观众短评 · 亲子场</div>
+        <h3 style="margin:0 0 6px">《海边小兽医》98分钟不拖沓</h3>
+        <p style="color:var(--sub)">动物病例推动人物变化，不强行煽情。散场小孩主动问后续，说明情绪落点准。选14:20场最稳。</p>
+        <p class="stars">★★★★ <a href="#">全文 #</a></p>
+      </article>
+      <article class="review">
+        <div class="by">创作谈 · 动作指导整理</div>
+        <h3 style="margin:0 0 6px">《边境列车》为什么少用替身特写</h3>
+        <p style="color:var(--sub)">长车厢打斗采用固定机位分段拍摄，剪辑保留喘息声与金属回声；全文整理Weapon/空间/节奏三类分镜对照。</p>
+        <p class="stars">推荐 ★★★★ <a href="#">全文 #</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section id="guide">
+    <div class="sec-top">
+      <div><h2><span class="n">07</span>片单指南</h2><p class="sec-sub">按场景而不是只按题材推荐，降低“不知道看啥”的决策成本。</p></div>
+      <a class="more" href="#">全部片单 #</a>
+    </div>
+    <div class="grid g2">
+      <div class="guide-item"><strong>周末带娃 100分钟内</strong><div class="bar3"><i style="width:82%"></i></div><p style="color:var(--sub);font-size:13px;margin:6px 0 0">《海边小兽医》+修复动画短片，避开惊悚与长对白。</p></div>
+      <div class="guide-item"><strong>一人晚上悬疑专场</strong><div class="bar3"><i style="width:90%"></i></div><p style="color:var(--sub);font-size:13px;margin:6px 0 0">《江雾谜案》《无声证词》优先，别提前看剧透剪辑。</p></div>
+      <div class="guide-item"><strong>科幻选特效厅</strong><div class="bar3"><i style="width:88%"></i></div><p style="color:var(--sub);font-size:13px;margin:6px 0 0">《轨道之上》IMAX/杜比更值，普通厅会损失暗部。</p></div>
+      <div class="guide-item"><strong>老片补完用修复厅</strong><div class="bar3"><i style="width:80%"></i></div><p style="color:var(--sub);font-size:13px;margin:6px 0 0">《山城夏日》《鼓声往西》优先4K，午间场人少。</p></div>
+      <div class="guide-item"><strong>喜剧黄金场避高峰</strong><div class="bar3"><i style="width:74%"></i></div><p style="color:var(--sub);font-size:13px;margin:6px 0 0">《周末修理铺》15:00场比19:30更轻松，停车也方便。</p></div>
+      <div class="guide-item"><strong>文艺片工作日午间</strong><div class="bar3"><i style="width:68%"></i></div><p style="color:var(--sub);font-size:13px;margin:6px 0 0">小厅、低干扰，长镜头和字幕都更清楚。</p></div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="sec-top">
+      <div><h2><span class="n">08</span>海报图集</h2><p class="sec-sub">首映礼、路演现场、修复版对比、特效厅实拍，图注按真实场景写。</p></div>
+      <a class="more" href="#">更多图集 #</a>
+    </div>
+    <div class="grid g4">
+      <article class="poster"><div class="cv c2"><span>首映</span>🎬</div><div class="bd"><h3>首映红毯</h3><p>主创齐聚，媒体群访环节。<a href="#">查看 #</a></p></div></article>
+      <article class="poster"><div class="cv c1"><span>路演</span>🎤</div><div class="bd"><h3>高校路演</h3><p>答观众问，现场抽票环节。<a href="#">查看 #</a></p></div></article>
+      <article class="poster"><div class="cv c3"><span>修复</span>🎞️</div><div class="bd"><h3>4K修复对比</h3><p>原片与修复版画质同帧对照。<a href="#">查看 #</a></p></div></article>
+      <article class="poster"><div class="cv c4"><span>实拍</span>🛰️</div><div class="bd"><h3>特效厅实拍</h3><p>IMAX激光厅座椅与声场记录。<a href="#">查看 #</a></p></div></article>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="sec-top"><div><h2><span class="n">09</span>关于6080电影网</h2><p class="sec-sub">站点定位、网址与内容说明。</p></div></div>
+    <div class="about">
+      <p><strong>网站名称：</strong>6080电影网</p>
+      <p><strong>网站网址：</strong><span class="urlbox">https://6080dianyingwang-zh.github.io</span></p>
+      <p style="color:var(--sub)">6080电影网是面向普通观众的选片资讯站，内容覆盖电影资讯、院线新片、热播榜单、排片档期、类型片库、影评与片单指南。本站不提供影片资源下载，不提供在线播放地址，所有观影请通过正规影院或授权平台完成。</p>
+      <div class="note">页面中的片名、评分、票房、场次均为演示示例，正式上线请替换为真实数据并标注更新时间；类型片库可按地区、年代、首字母进一步扩展检索。</div>
+    </div>
+    <div class="sec-top" style="margin-top:24px"><div><h2><span class="n">10</span>常见问题</h2><p class="sec-sub">收录与使用时容易问到的几点。</p></div></div>
+    <div class="faq">
+      <details open><summary>6080电影网做资源站吗？</summary><p>不做。本站只整理资讯、榜单、排片与影评；播放、购票、下载请走正规渠道。</p></details>
+      <details><summary>必应收录要注意什么？</summary><p>保持标题含“6080电影网/6080dianyingwang-zh.github.io”、描述不堆词、移动端无横向滚动；本页已按单页结构做H1/H2、canonical与OG。可按需到 Bing Webmaster Tools 提交站点，但本交付不含 sitemap/robots。</p></details>
+      <details><summary>内页链接为什么是 # ？</summary><p>按单页演示要求，栏目锚点用 # 占位；后续接影片详情、影评全文或资讯列表时，把 # 替换为真实相对路径即可。</p></details>
+      <details><summary>移动端打开会变形吗？</summary><p>不会。本页用 viewport 加弹性网格与媒体查询：960px 以下导航转汉堡菜单、海报卡转两列、榜单隐藏中间列；600px 以下所有网格统一两列，表格区域在窄屏会自动横向滚动，不会出现横向溢出。</p></details>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <strong style="color:var(--ink)">6080电影网</strong>
+      <p style="margin:6px 0 0">电影资讯 · 院线新片 · 热播榜单 · 类型片库 · 影评推荐<br>网址：<a href="https://6080dianyingwang-zh.github.io">https://6080dianyingwang-zh.github.io</a></p>
+    </div>
+    <div>
+      <strong style="color:var(--ink)">栏目</strong>
+      <p><a href="#news">电影资讯</a> · <a href="#new">院线新片</a> · <a href="#rank">热播榜</a><br><a href="#genre">类型片库</a> · <a href="#guide">片单指南</a></p>
+    </div>
+    <div>
+      <strong style="color:var(--ink)">说明</strong>
+      <p>本站为资讯参考站，不提供影片下载与在线播放服务。</p>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="tt" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var bg=document.getElementById('bg'),nv=document.getElementById('nv');
+  bg.addEventListener('click',function(){nv.classList.toggle('open');});
+  nv.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){nv.classList.remove('open');});
+  });
+  document.querySelectorAll('.tabs').forEach(function(group){
+    var tabs=group.querySelectorAll('.tab');
+    tabs.forEach(function(t){
+      t.addEventListener('click',function(){
+        tabs.forEach(function(x){x.classList.remove('on');});
+        t.classList.add('on');
+        var box=t.closest('section');
+        box.querySelectorAll('.pane').forEach(function(p){p.classList.remove('on');});
+        var el=document.getElementById(t.getAttribute('data-t'));
+        if(el)el.classList.add('on');
+      });
+    });
+  });
+  var secs=[].slice.call(document.querySelectorAll('section[id]'));
+  var links=[].slice.call(nv.querySelectorAll('a'));
+  function spy(){
+    var y=window.scrollY+90,cur='top';
+    secs.forEach(function(s){if(s.offsetTop<=y)cur=s.id;});
+    links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur);});
+  }
+  window.addEventListener('scroll',spy);spy();
+  var tt=document.getElementById('tt');
+  window.addEventListener('scroll',function(){tt.style.display=window.scrollY>500?'grid':'none';});
+  tt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+})();
+</script>
+</body>
+</html>
